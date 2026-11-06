@@ -1,0 +1,68 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.python-version
+
+# Generated builds; publish only the main EXE and its checksum
+/build/
+/dist/*
+*.spec
+*.exe
+*.zip
+!/dist/UsageDesk.exe
+!/dist/SHA256SUMS.txt
+
+# Private application state, browser profiles and exported usage
+/TUTORIAL.md
+/settings.json
+/state/
+/local-data/
+/browser/
+/exports/
+/screenshots/
+*.local.*
+*.log
+*.csv
+*.xlsx
+*.jsonl
+*.jsonl.*
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+.codex/
+.claude/
+sessions/
+archived_sessions/
+
+# Secrets and authentication material
+.env
+.env.*
+!.env.example
+credentials*.json
+auth.json
+auth.*.json
+secrets.json
+secrets.*.json
+*.pem
+*.key
+*.pfx
+*.p12
+
+# Editor, OS and temporary files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.bak
+*.swp
+
+# prices.json is a PUBLIC offline price snapshot; keep it versioned.
+# Custom prices and source directories belong in ignored settings.json
+# or in the default LocalAppData application state outside this repo.
